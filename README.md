@@ -6,3 +6,8 @@ A pnpm library template.
 ```
 pnpm i
 ```
+
+## add packages dependenies
+```
+pnpm add @fa/components -r --filter @fa/example
+```
