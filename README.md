@@ -11,3 +11,8 @@ pnpm i
 ```
 pnpm add @fa/components -r --filter @fa/example
 ```
+
+## run start
+```
+pnpm run start:exam
+```
