@@ -1,0 +1,9 @@
+## General
+**/.cache
+**/public
+.history
+
+build
+
+## PNPM
+pnpm-lock.yaml
