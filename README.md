@@ -32,6 +32,11 @@ pnpm version-packages
 pnpm release 
 ```
 
+## commit
+```
+pnpm commit
+```
+
 
 
 
