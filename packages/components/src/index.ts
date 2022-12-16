@@ -1,3 +1,3 @@
 export default () => {
-  console.log('打印：packages/components');
+  console.log('打印：packages/components1');
 }
