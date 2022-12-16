@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:example": "pnpm -r --filter=./apps/example run start",
     "preinstall": "npx only-allow pnpm",
+    "start:example": "pnpm -r --filter=./apps/example run start",
+    "build": "pnpm --filter=@fa/* run build",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "pnpm build && pnpm release:only",
