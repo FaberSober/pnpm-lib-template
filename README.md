@@ -16,3 +16,22 @@ pnpm add @fa/components -r --filter @fa/example
 ```
 pnpm run start:exam
 ```
+
+## develop 
+```
+# 1-1 进行了一些开发...
+# 1-2 提交变更集
+pnpm changeset
+
+# 1-3 提升版本
+# changeset version
+pnpm version-packages 
+
+# 1-4 发包
+# pnpm build && pnpm changeset publish --registry=...
+pnpm release 
+```
+
+
+
+

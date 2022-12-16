@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "npx only-allow pnpm",
+    "postinstall": "husky install",
     "dev:example": "pnpm -r --filter=./apps/example run dev",
+    "commit": "cz",
     "build": "pnpm --filter=@fa/* run build",
     "changeset": "changeset",
     "version-packages": "changeset version",
@@ -17,7 +19,26 @@
   "license": "ISC",
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "commitizen": "^4.2.6",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.29.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
     "typescript": "^4.9.4",
     "vite": "^4.0.1"
+  },
+  "packageManager": "pnpm@7.18.2",
+  "engines": {
+    "node": ">=14.19.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
