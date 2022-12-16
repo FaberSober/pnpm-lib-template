@@ -9,7 +9,7 @@ export default defineConfig({
         sourcemap: true,
         cssCodeSplit: true,
         lib: {
-            entry: path.resolve(__dirname, 'src/index.js'),
+            entry: path.resolve(__dirname, 'src/index.ts'),
             name: 'FaComponents',
             formats: ['es', 'umd'],
             fileName: (format) => `fa-components.${format}.js`,
