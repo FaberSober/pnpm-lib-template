@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:example": "pnpm -r --filter=./apps/example run start"
+    "start:example": "pnpm -r --filter=./apps/example run start",
+    "preinstall": "npx only-allow pnpm"
   },
   "keywords": [],
   "author": "",

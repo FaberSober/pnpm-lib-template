@@ -2,8 +2,14 @@ lockfileVersion: 5.4
 
 importers:
 
+  .:
+    specifiers: {}
+
   apps/example:
     specifiers:
-      '@fa/components': workspace:^1.0.0
+      '@fa/components': workspace:*
     dependencies:
       '@fa/components': link:../../packages/components
+
+  packages/components:
+    specifiers: {}
