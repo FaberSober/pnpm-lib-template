@@ -1,6 +1,12 @@
 # pnpm-lib-template
 A pnpm library template.
 
+# Branch Info.
+| branch | info |
+|---|---|
+| main | js+pnpm |
+| full | ts+pnpm+vite+changesets+cz+eslint+husky+prettier |
+
 # Get Start
 ## Install
 ```
