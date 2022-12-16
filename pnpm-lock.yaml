@@ -32,11 +32,16 @@ importers:
 
   apps/example:
     specifiers:
-      '@fa/components': workspace:*
+      '@farando/components': workspace:*
+      '@farando/ui': workspace:*
     dependencies:
-      '@fa/components': link:../../packages/components
+      '@farando/components': link:../../packages/components
+      '@farando/ui': link:../../packages/ui
 
   packages/components:
+    specifiers: {}
+
+  packages/ui:
     specifiers: {}
 
 packages:

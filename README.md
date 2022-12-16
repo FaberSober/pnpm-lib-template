@@ -9,7 +9,8 @@ pnpm i
 
 ## add packages dependenies
 ```
-pnpm add @fa/components -r --filter @fa/example
+pnpm add @farando/components -r --filter @farando/example
+pnpm add @farando/ui -r --filter @farando/example
 ```
 
 ## run start

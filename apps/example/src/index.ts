@@ -1,5 +1,7 @@
-import components from "@fa/components";
+import components from '@farando/components';
+import ui from '@farando/ui';
 
-console.log('我是 apps 下的 exam')
+console.log('我是 apps 下的 exam');
 
 components();
+ui();

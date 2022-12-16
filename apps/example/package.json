@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fa/components": "workspace:*"
+    "@farando/components": "workspace:*",
+    "@farando/ui": "workspace:*"
   }
 }
