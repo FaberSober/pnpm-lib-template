@@ -1,10 +1,10 @@
 {
-  "name": "@fa/example",
-  "type": "module",
-  "version": "1.0.1",
+  "name": "@farando/example",
+  "version": "1.0.2",
+  "private": true,
   "description": "",
   "main": "index.ts",
-  "types": "module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite"

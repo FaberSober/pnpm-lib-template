@@ -1,6 +1,6 @@
 {
-  "name": "@fa/components",
-  "version": "1.0.1",
+  "name": "@farando/components",
+  "version": "1.0.2",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,10 +9,8 @@
   "author": "",
   "license": "ISC",
   "publishConfig": {
-    "access": "public"
-  },
-  "devDependencies": {
-    "father": "^4.1.1"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "files": [
     "dist",
@@ -22,10 +20,10 @@
   "module": "./dist/fa-components.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
-      ".": {
-          "import": "./dist/fa-components.es.js",
-          "require": "./dist/fa-components.umd.js"
-      },
-      "./dist/index.css": "./dist/index.css"
+    ".": {
+      "import": "./dist/fa-components.es.js",
+      "require": "./dist/fa-components.umd.js"
+    },
+    "./dist/index.css": "./dist/index.css"
   }
 }
