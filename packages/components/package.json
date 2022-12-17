@@ -3,8 +3,7 @@
   "version": "1.0.2",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build"
+    "build": "tsc && vite build"
   },
   "author": "",
   "license": "ISC",
@@ -25,5 +24,8 @@
       "require": "./dist/fa-components.umd.js"
     },
     "./dist/index.css": "./dist/index.css"
+  },
+  "devDependencies": {
+    "vite-plugin-dts": "^1.7.1"
   }
 }

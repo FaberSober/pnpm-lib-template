@@ -13,7 +13,6 @@
     "version-packages": "changeset version",
     "release": "pnpm build && pnpm release:only",
     "release:only": "changeset publish --registry=https://registry.npmjs.com/",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf /s/d node_modules && pnpm -r exec rimraf /s/d node_modules dist"
   },
   "keywords": [],
