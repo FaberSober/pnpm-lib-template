@@ -4,10 +4,11 @@
   "description": "",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "postinstall": "husky install",
     "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
-    "prettier": "prettier --write ./**/*.{ts,css,less,scss}",
+    "prettier": "prettier --write --ignore-unknown ./**/*.{ts,css,less,scss}",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "pnpm build && pnpm release:only",
