@@ -4,7 +4,6 @@
   "description": "",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "husky install",
     "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
@@ -13,7 +12,7 @@
     "release": "pnpm build && pnpm release:only",
     "release:only": "changeset publish --registry=https://registry.npmjs.com/",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf node_modules && pnpm -r exec rm -rf node_modules"
+    "clean": "rimraf /s/d node_modules && pnpm -r exec rimraf /s/d node_modules dist"
   },
   "keywords": [],
   "author": "",
