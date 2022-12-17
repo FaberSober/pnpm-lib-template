@@ -5,9 +5,9 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "husky install",
-    "dev:example": "pnpm -r --filter=./apps/example run dev",
-    "commit": "cz",
-    "build": "pnpm --filter=@fa/* run build",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "pnpm build && pnpm release:only",
@@ -24,13 +24,12 @@
     "@commitlint/config-conventional": "^17.3.0",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
-    "commitizen": "^4.2.6",
-    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.29.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
     "prettier": "^2.8.1",
     "rimraf": "^3.0.2",
+    "turbo": "^1.6.3",
     "typescript": "^4.9.4",
     "vite": "^4.0.1"
   },
@@ -44,10 +43,5 @@
       "prettier --write --ignore-unknown",
       "git add"
     ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
   }
 }
